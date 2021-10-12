@@ -1,0 +1,63 @@
+body{
+    margin: auto;
+    text-align: center;
+    font-family: 'Klee One', cursive;
+}
+
+.header{
+    background-color: rgb(69, 159, 243);
+    margin: 0;
+    padding: 60px;
+    box-shadow: grey 3px 3px 3px 5px;
+    color: honeydew;
+}
+
+.header h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.userinput input{
+    margin-top: 30px;
+    height: 40px;
+    width: 40%;
+    font-size: 25px;
+    font-family: 'Klee One', cursive;
+    text-align: center;
+}
+
+.buttons{
+    margin: 30px auto;
+}
+
+.buttons button{
+    height: 55px;
+    width: 55px;
+    font-size: 35px;
+    margin: auto 10px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(27, 113, 194);
+}
+.buttons button:hover{
+    box-shadow: grey 1px 1px 1px 1px;
+}
+
+#equation{
+    margin:50px;
+    color: rgb(27, 113, 240);
+    font-size: 25px;
+}
+
+.result1{
+    max-width: 40%;
+    margin: auto;
+}
+#result{
+    color: rgb(23, 67, 133);
+    font-size:2em;
+    border: rgb(23, 67, 133) solid 2px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+}

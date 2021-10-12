@@ -1,0 +1,42 @@
+body{
+    max-width: 800px;
+    background: lightblue;
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    margin-top: 50px;
+    border: black solid 5px;
+}
+
+#count{
+    border: solid black 3px;
+    margin: auto 350px;
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: auto;
+}
+
+.buttons button{
+    margin: 5px;
+    height: 40px;
+}
+
+.buttons #b1{
+    background: greenyellow;
+}
+.buttons #b1:hover{
+    box-shadow: grey 2px 2px 4px;
+}
+.buttons #save{
+    background: green;
+}
+.buttons #save:hover{
+    box-shadow: grey 2px 2px 4px;
+}
