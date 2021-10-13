@@ -1,3 +1,7 @@
+:root {
+  --first-color: rgb(255, 116, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +15,7 @@ header {
 
   text-align: center;
 
-  background-color: rgb(255, 116, 255);
+  background: var(--first-color);
 }
 
 #calculator,
@@ -21,7 +25,7 @@ header {
   width: 30%;
   height: 30vh;
 
-  border: 3px solid rgb(255, 116, 255);
+  border: 3px solid var(--first-color);
   border-radius: 10px;
 
   text-align: center;
@@ -42,11 +46,8 @@ header {
   margin-top: 25px;
 }
 
-#btn-add,
-#btn-subtract,
-#btn-divide,
-#btn-multiply {
-  background-color: rgb(255, 116, 255);
+button[id^="btn-"] {
+  background: var(--first-color);
 
   padding: 10px;
   margin: 2px;
@@ -54,6 +55,10 @@ header {
   border: 0.5px solid black;
 
   font-weight: 900;
+}
+
+#btn-reset {
+  padding: 5px;
 }
 
 #current-calculation {

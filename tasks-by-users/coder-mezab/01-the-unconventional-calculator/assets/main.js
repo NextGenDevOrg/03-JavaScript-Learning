@@ -1,9 +1,10 @@
 const defaultValue = 0;
 let currentResult = defaultValue;
-let logEntries = [];
+const logEntries = [];
 
 function getUserNumberInput() {
-  return parseInt(userInput.value);
+  const result = parseInt(userInput.value);
+  return result || 0;
 }
 
 function createAndWriteOutput(operator, resultBeforecalc, calcNumber) {
@@ -24,8 +25,12 @@ function writeToLog(
     result: newResult,
   };
   logEntries.push(logEntry);
-  console.log(logEntry.oppration);
-  console.log(logEntries);
+}
+
+function reset() {
+  userInput.value = defaultValue;
+  currentResult = defaultValue;
+  outputResult(defaultValue, "you just reset it");
 }
 
 function add() {
@@ -64,3 +69,4 @@ addBtn.addEventListener("click", add);
 subtractBtn.addEventListener("click", subtract);
 multiplyBtn.addEventListener("click", multiply);
 divideBtn.addEventListener("click", divide);
+resetBtn.addEventListener("click", reset);
