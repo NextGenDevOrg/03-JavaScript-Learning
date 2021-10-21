@@ -1,0 +1,67 @@
+:root {
+  --first-color: rgb(255, 116, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background: var(--first-color);
+}
+
+#calculator,
+#results {
+  margin: 20px auto;
+
+  width: 30%;
+  height: 30vh;
+
+  border: 3px solid var(--first-color);
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+#input-number {
+  width: 40%;
+  height: 35px;
+
+  border-radius: 4px;
+
+  font-size: 1.5rem;
+
+  margin-top: 25px;
+}
+
+#cal-actions {
+  margin-top: 25px;
+}
+
+button[id^="btn-"] {
+  background: var(--first-color);
+
+  padding: 10px;
+  margin: 2px;
+
+  border: 0.5px solid black;
+
+  font-weight: 900;
+}
+
+#btn-reset {
+  padding: 5px;
+}
+
+#current-calculation {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
