@@ -19,13 +19,24 @@ const getPlayerChoice = () => {
     ""
   ).toLowerCase();
 
-  if (selection === "1") {
+switch (selection){
+  case 1:
     selection = ROCK;
-  } else if (selection === "2") {
+    break;
+  case 2:
     selection = PAPER;
-  } else if (selection === "3") {
+    break;
+  case 3:
     selection = SCISSORS;
-  }
+}
+
+  // if (selection === "1") {
+  //   selection = ROCK;
+  // } else if (selection === "2") {
+  //   selection = PAPER;
+  // } else if (selection === "3") {
+  //   selection = SCISSORS;
+  // }
 
   if (selection !== ROCK && selection !== PAPER && selection !== SCISSORS) {
     alert(`Invalid choice, we choose ${ROCK} for you`);
@@ -36,14 +47,16 @@ const getPlayerChoice = () => {
 
 const getComputerChoice = () => {
   const choice = Math.random();
-  if (choice > 0.34) {
+};
+if (choice > 0.67) {
+  return PAPER;
+}
+    else if (choice > 0.34) {
     return ROCK;
-  } else if (choice > 0.67) {
-    return PAPER;
   } else {
     return SCISSORS;
-  }
-};
+  };
+
 
 const result = (computerChoice, playerChoice) => {
   if (computerChoice === playerChoice) {
@@ -70,11 +83,11 @@ startGameBtn.addEventListener("click", () => {
   console.log(winner);
   let message = `You picked ${playerSelection}, Computer picked ${computerSelection}, Therefore you `;
   if (winner === draw) {
-    message = message + "have a draw.";
+    message = `${message} have a draw.`;
   } else if (winner === playerWins) {
-    message = message + "won!";
+    message = `${message} + won!`;
   } else {
-    message = message + "lost!";
+    message = `${message} + lost!`;
   }
   alert(`${message}`);
   gameIsRunning = false;
