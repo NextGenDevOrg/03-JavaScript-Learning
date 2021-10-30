@@ -26,7 +26,7 @@ const renderMovies = (filter = "") => {
     let text = movieTitle + " - ";
     for (let key in info) {
       if (key !== "title") {
-        text = text + `${key}: ${info[key]} `;
+        text = `${text}${key}: ${info[key]} `;
       }
     }
     movieEl.textContent = text;
