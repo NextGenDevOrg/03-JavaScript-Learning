@@ -11,7 +11,7 @@ const movies = [];
 
 const toggleBackdrop = () => backdrop.classList.toggle("visible");
 
-const updateUI =
+const updateUI = () =>
   movies.length === 0
     ? (entryTextSection.style.display = "block")
     : (entryTextSection.style.display = "none");
