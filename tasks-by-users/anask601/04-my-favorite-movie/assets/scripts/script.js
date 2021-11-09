@@ -1,30 +1,20 @@
 const addMovieModal = document.getElementById("add-modal");
-// const addMovieModal = document.querySelector('#add-modal');
-// const addMovieModal = document.body.children[1];
 const startAddMovieButton = document.querySelector("header button");
-// const startAddMovieButton = document.querySelector('header').lastElementChild;
 const backdrop = document.getElementById("backdrop");
-// const backdrop = document.body.firstElementChild;
 const cancelAddMovieButton = addMovieModal.querySelector(".btn--passive");
 const confirmAddMovieButton = cancelAddMovieButton.nextElementSibling;
 const userInputs = addMovieModal.querySelectorAll("input");
-// const userInputs = addMovieModal.getElementsByTagName('input');
 const entryTextSection = document.getElementById("entry-text");
 const deleteMovieModal = document.getElementById("delete-modal");
 
 const movies = [];
 
-const toggleBackdrop = () => {
-  backdrop.classList.toggle("visible");
-};
+const toggleBackdrop = () => backdrop.classList.toggle("visible");
 
-const updateUI = () => {
-  if (movies.length === 0) {
-    entryTextSection.style.display = "block";
-  } else {
-    entryTextSection.style.display = "none";
-  }
-};
+const updateUI =
+  movies.length === 0
+    ? (entryTextSection.style.display = "block")
+    : (entryTextSection.style.display = "none");
 
 const closeMovieDeletionModal = () => {
   toggleBackdrop();
@@ -42,7 +32,6 @@ const deleteMovieHandler = (movieId) => {
   movies.splice(movieIndex, 1);
   const listRoot = document.getElementById("movie-list");
   listRoot.children[movieIndex].remove();
-  // listRoot.removeChild(listRoot.children[movieIndex]);
   closeMovieDeletionModal();
   updateUI();
 };
@@ -57,8 +46,6 @@ const startDeleteMovieHandler = (movieId) => {
   confirmDeletionButton.replaceWith(confirmDeletionButton.cloneNode(true));
 
   confirmDeletionButton = deleteMovieModal.querySelector(".btn--danger");
-
-  // confirmDeletionButton.removeEventListener('click', deleteMovieHandler.bind(null, movieId)); // will not work :(
 
   cancelDeletionButton.removeEventListener("click", closeMovieDeletionModal);
 
@@ -100,9 +87,6 @@ const showMovieModal = () => {
 };
 
 const clearMovieInput = () => {
-  //   userInput[0].value = "";
-  //   userInput[1].value = "";
-  //   userInput[2].value = "";
   for (const usrInput of userInputs) {
     usrInput.value = "";
   }
