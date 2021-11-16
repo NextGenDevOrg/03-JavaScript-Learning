@@ -1,0 +1,99 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #2c2c2c;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0.5rem;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #ff0062;
+
+  width: 80%;
+  height: 2rem;
+
+  appearance: none;
+
+  border: 1px solid #a927f5;
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value,
+progress[value]::-moz-progress-bar {
+  background-color: #a927f5;
+
+  transition: all 0.2s ease-out;
+}
+
+button {
+  color: white;
+  background: #ff0062;
+
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+
+  cursor: pointer;
+
+  font: inherit;
+
+  border: 1px solid #ff0062;
+  border-radius: 6px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #a927f5;
+
+  border-color: #a927f5;
+}
+
+#health-levels,
+#controls {
+  background: white;
+
+  width: 30rem;
+
+  margin: 2rem auto;
+  padding: 1rem;
+
+  text-align: center;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+}
+
+#bonus-life {
+  color: white;
+  background: #ff0062;
+
+  padding: 0.15rem 0.5rem;
+  margin: 0 0.5rem;
+
+  font-weight: bold;
+  text-align: center;
+
+  border: 1px solid #ff0062;
+  border-radius: 10px;
+}
