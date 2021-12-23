@@ -9,7 +9,7 @@ const currentCalculationOutput = document.getElementById("current-calculation");
 
 const defaultResult = 0;
 let currentResult = defaultResult;
-let logEntries = [];
+const logEntries = [];
 
 function getUserNumberInput() {
   return parseInt(usrInput.value);
