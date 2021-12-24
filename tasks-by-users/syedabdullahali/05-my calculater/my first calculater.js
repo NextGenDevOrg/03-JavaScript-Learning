@@ -18,14 +18,11 @@ function finalResult(equation, result){
     
     let currentresul = [0];
     let logEntris =[] 
-    
-    
+      
 
      function getuserinput() {
          return parseFloat(usrInput.value);
      }
-    
-
 
      function creatAndWriteOutput(operator, resultBeforecal, calcNumber){
       const crrentcalculat =`${operator} ${resultBeforecal} ${calcNumber}`;
@@ -36,29 +33,7 @@ function finalResult(equation, result){
     const enterdnumber = getuserinput();
     const initialresult = currentresul;
 
-
-
-
-
-
-
-
-
     }
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
 
     function add(){
      const enterdnumber =  getuserinput(); 
