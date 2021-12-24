@@ -102,8 +102,6 @@ function finalResult(equation, result){
           console.log(logEntry);
           console.log(logEntris);
     } 
-
-    
     addBtn.addEventListener('click', add);
     subtractBtn.addEventListener('click', subtract);
     multiplyBtn.addEventListener('click', multipiy);
