@@ -17,12 +17,3 @@ function resetbtn(){
   document.getElementById("currentresult").innerHTML = countresult
   countresult = 0
 }
-
-
-
-
- 
-
-
-
-
