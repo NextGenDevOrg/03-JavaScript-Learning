@@ -67,9 +67,6 @@ function finalResult(equation, result){
           console.log(logEntry);
           console.log(logEntris); 
          }
-
-
-
     function multipiy (){ const enterdnumber =  getuserinput(); 
         const initialresult = currentresul;
         currentresul = currentresul * enterdnumber;
