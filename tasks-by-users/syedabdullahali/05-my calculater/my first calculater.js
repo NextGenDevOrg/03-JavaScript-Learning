@@ -3,7 +3,6 @@ const usrInput = document.getElementById("usrinput");
 const crrentcalculationOutput = document.getElementById("crrentcalculation");
 const currentresultOutput = document.getElementById("currentresult");
 
-
 const addBtn = document.getElementById("addbtn");
 const subtractBtn = document.getElementById("subtractbtn");
 const multiplyBtn = document.getElementById("multiplybtn");
@@ -14,8 +13,7 @@ function finalResult(equation, result){
     crrentcalculationOutput.textContent = equation;
     currentresultOutput.textContent = result;
 }
- 
-    
+
     let currentresul = [0];
     let logEntris =[] 
       
