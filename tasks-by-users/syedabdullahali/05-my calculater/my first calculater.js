@@ -51,7 +51,6 @@ function finalResult(equation, result){
      console.log(logEntris);
     }
 
-
     function subtract(){
         const enterdnumber =  getuserinput(); 
         const initialresult = currentresul;
@@ -76,14 +75,11 @@ function finalResult(equation, result){
             prevResult: initialresult,
             number:enterdnumber,
             result:currentresul,
-          } 
-          
+          }      
     logEntris.push(enterdnumber);
      console.log(logEntry);
      console.log(logEntris);  
     }  
-     
-
     function divide (){
         const enterdnumber =  getuserinput(); 
         const initialresult = currentresul;
