@@ -2,4 +2,168 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  width: 100%;
+
+  padding: 2.5rem;
+
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  text-align: center;
+
+  background: #168aad;
+  background-image: linear-gradient(
+    left,
+    #34a0a4 20%,
+    #168aad 40%,
+    #1a759f 60%,
+    #1e6091 80%,
+    #184e77 100%
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    #34a0a4 20%,
+    #168aad 40%,
+    #1a759f 60%,
+    #1e6091 80%,
+    #184e77 100%
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    #34a0a4 20%,
+    #168aad 40%,
+    #1a759f 60%,
+    #1e6091 80%,
+    #184e77 100%
+  );
+  background-size: 200% 200%;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+  animation: run 3s infinite alternate;
+}
+
+#results,
+#calculator {
+  width: 40rem;
+  max-width: 90%;
+
+  margin: 2rem auto;
+  padding: 2rem;
+
+  color: #168aad;
+
+  border: 1px solid #168aad;
+  border-radius: 10px;
+
+  box-shadow: 4px 2px 8px #168aad;
+}
+
+#results {
+  text-align: center;
+}
+
+#calculator input {
+  width: 10rem;
+
+  padding: 0.15rem;
+  margin: auto;
+
+  display: block;
+
+  color: #168aad;
+
+  font: inherit;
+  font-size: 3rem;
+  text-align: center;
+
+  border: 2px solid #168aad;
+}
+
+#calculator input:focus {
+  outline: none;
+}
+
+#calculator button {
+  padding: 1rem;
+  margin: 0.25rem;
+
+  background: #168aad;
+  background-image: linear-gradient(
+    left,
+    #168aad 25%,
+    #1a759f 50%,
+    #1e6091 75%,
+    #184e77 100%
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    #168aad 25%,
+    #1a759f 50%,
+    #1e6091 75%,
+    #184e77 100%
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    #168aad 25%,
+    #1a759f 50%,
+    #1e6091 75%,
+    #184e77 100%
+  );
+  color: #fff;
+  font: inherit;
+
+  border: 1px solid #168aad;
+
+  cursor: pointer;
+}
+
+#calculator button:focus {
+  outline: none;
+}
+
+#calculator button:hover,
+#calculator button:active {
+  background: #184e77;
+  background-image: linear-gradient(
+    right,
+    #168aad 25%,
+    #1a759f 50%,
+    #1e6091 75%,
+    #184e77 100%
+  );
+  background-image: -webkit-linear-gradient(
+    right,
+    #168aad 25%,
+    #1a759f 50%,
+    #1e6091 75%,
+    #184e77 100%
+  );
+  background-image: -moz-linear-gradient(
+    right,
+    #168aad 25%,
+    #1a759f 50%,
+    #1e6091 75%,
+    #184e77 100%
+  );
+}
+
+#calc-actions button {
+  width: 4rem;
+}
+
+#calc-actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@keyframes run {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
